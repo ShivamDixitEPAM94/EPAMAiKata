@@ -1,0 +1,1 @@
+Feature: Specify Username\n\n  Scenario: Specify Unique Username\n    Given Admin is logged into the system\n    When Admin navigates to \"Add Employee\"\n    And Admin toggles \"Create Login Details\" to ON\n    And Admin enters a unique username\n    And Admin clicks \"Save\"\n    Then The username is saved successfully\n\n  Scenario: Specify Duplicate Username\n    Given
